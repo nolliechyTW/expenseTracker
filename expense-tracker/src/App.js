@@ -1,4 +1,6 @@
 import Expenses from "./components/Expenses/Expenses";
+import ExpenseForm from "./components/NewExpenses/ExpenseForm";
+import NewExpenses from "./components/NewExpenses/NewExpenses";
 
 const App = () => {
   const expenses = [
@@ -25,6 +27,7 @@ const App = () => {
   return (
     <div className="App">
       <h2>Let's track the expense!</h2>
+      <NewExpenses/>
       {/* pass data accross components */}
       <Expenses items={expenses}/>
     </div>
